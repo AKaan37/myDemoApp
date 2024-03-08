@@ -7,7 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>myDemoApp</name>
   <url>http://maven.apache.org</url>
-  
   <build>
     <plugins>
       <plugin>
@@ -15,14 +14,42 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version> <!-- Use the latest version -->
         <configuration>
-          <source>7</source> <!-- Set the Java source version to 7 or a later version -->
-          <target>7</target> <!-- Set the Java target version to 7 or a later version -->
+          <source>8</source> <!-- Set the Java source version to 7 or a later version -->
+          <target>8</target> <!-- Set the Java target version to 7 or a later version -->
         </configuration>
       </plugin>
     </plugins>
   </build>
-  
   <dependencies>
+	<dependency>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-core</artifactId>
+      <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sparkjava</groupId>
+      <artifactId>spark-template-mustache</artifactId>
+      <version>2.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.10.0</version>
+    </dependency>
+    
+   <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.10.0</version>
+    </dependency>
+   
+   <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>2.10.0</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
