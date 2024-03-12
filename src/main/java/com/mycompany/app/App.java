@@ -23,8 +23,9 @@ public class App
       for(int i=0;i<n;i++){
         int at=s1.charAt(i)-'a'+a1.get(i)*a2.get(i);
         at%=26;
-        ss+=((char)at+'a');
+        ss+=(char)((char)at+'a');
       }
+      e%=n;
       String sss="";
       for(int i=e;i<n;i++)sss+=ss.charAt(i);
       for(int i=0;i<e;i++)sss+=ss.charAt(i);
