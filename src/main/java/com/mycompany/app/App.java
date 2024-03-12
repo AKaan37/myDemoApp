@@ -15,7 +15,7 @@ public class App
 {
     public static String search(String s1,ArrayList<Integer> a1,ArrayList<Integer> a2, int e) {
       int n=s1.length();
-      if(a1.size()!=n || a2.size()!=n)return a1.size() + a2.size() + n + "Length of the integer arrays must be equal to the length of the string";
+      if(a1.size()!=n || a2.size()!=n)return a1.size() + " " + a2.size() + " " + n + "Length of the integer arrays must be equal to the length of the string";
       for(int i=0;i<n;i++){
         if(s1.charAt(i)<'a' || s1.charAt(i)>'z')return "Message must only contain lowercase english letters!";
       }
