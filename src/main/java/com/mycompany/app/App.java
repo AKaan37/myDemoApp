@@ -25,7 +25,10 @@ public class App
         at%=26;
         ss+=((char)at+'a');
       }
-      return ss;
+      String sss="";
+      for(int i=e;i<n;i++)sss+=ss.charAt(i);
+      for(int i=0;i<e;i++)sss+=ss.charAt(i);
+      return sss;
     }
 
     public static void main(String[] args) {

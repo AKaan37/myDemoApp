@@ -35,22 +35,35 @@ public class AppTest
      * Rigourous Test :-)
      */
     public void testFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertTrue(new App().search(array, 4));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(0, 0, 0, 0,0));
+      String res=new App().search("hello",array, array,0);
+      boolean flag=false;
+      if(res=="hello")flag=true;
+      assertTrue(flag);
     }
 
     public void testNotFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertFalse(new App().search(array, 5));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(0, 0, 0, 0,0));
+      String res=new App().search("hello",array, array,2);
+      boolean flag=false;
+      if(res=="llohe")flag=true;
+      assertTrue(flag);
     }
 
     public void testEmptyArray() {
-      ArrayList<Integer> array = new ArrayList<>();
-      assertFalse(new App().search(array, 1));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 1, 1, 1,1));
+      String res=new App().search("hello",array, array,2);
+      boolean flag=false;
+      if(res=="mmpif")flag=true;
+      assertTrue(flag);
     }
 
     public void testNull() {
-      assertFalse(new App().search(null, 1));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 1, 1, 1,1));
+      String res=new App().search("",array, array,2);
+      boolean flag=false;
+      if(res=="")flag=true;
+      assertTrue(flag);
     }
 
     public void testApp()
